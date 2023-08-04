@@ -13,8 +13,10 @@
 		4639A6C82A288CF300200A2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4639A6C62A288CF300200A2D /* Main.storyboard */; };
 		4639A6CA2A288CF400200A2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4639A6C92A288CF400200A2D /* Assets.xcassets */; };
 		4639A6CD2A288CF400200A2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4639A6CB2A288CF400200A2D /* LaunchScreen.storyboard */; };
-		DC7BAA122A717133006E6652 /* LinkedAccountsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC7BAA102A717133006E6652 /* LinkedAccountsTableViewCell.xib */; };
-		DC7BAA132A717133006E6652 /* LinkedAccountsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7BAA112A717133006E6652 /* LinkedAccountsTableViewCell.swift */; };
+		46CBD6E32A7D2C1E00914957 /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CBD6E22A7D2C1E00914957 /* PaymentVC.swift */; };
+		46CBD6EA2A7D2D2300914957 /* PaymentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46CBD6E82A7D2D2200914957 /* PaymentCollectionViewCell.xib */; };
+		46CBD6EB2A7D2D2300914957 /* PaymentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CBD6E92A7D2D2300914957 /* PaymentCollectionViewCell.swift */; };
+		46CBD6EE2A7D332300914957 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46CBD6ED2A7D332300914957 /* MyCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		4639A6C92A288CF400200A2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4639A6CC2A288CF400200A2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4639A6CE2A288CF400200A2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC7BAA102A717133006E6652 /* LinkedAccountsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkedAccountsTableViewCell.xib; sourceTree = "<group>"; };
-		DC7BAA112A717133006E6652 /* LinkedAccountsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedAccountsTableViewCell.swift; sourceTree = "<group>"; };
+		46CBD6E22A7D2C1E00914957 /* PaymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		46CBD6E82A7D2D2200914957 /* PaymentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentCollectionViewCell.xib; sourceTree = "<group>"; };
+		46CBD6E92A7D2D2300914957 /* PaymentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentCollectionViewCell.swift; sourceTree = "<group>"; };
+		46CBD6ED2A7D332300914957 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,10 @@
 				4639A6C02A288CF300200A2D /* AppDelegate.swift */,
 				4639A6C22A288CF300200A2D /* SceneDelegate.swift */,
 				4639A6C42A288CF300200A2D /* ViewController.swift */,
+				46CBD6E22A7D2C1E00914957 /* PaymentVC.swift */,
+				46CBD6ED2A7D332300914957 /* MyCollectionViewCell.swift */,
+				46CBD6EC2A7D2D3700914957 /* CollectionView Cell */,
 				4639A6C62A288CF300200A2D /* Main.storyboard */,
-				DC7BAA142A71713E006E6652 /* TableViewCell */,
 				4639A6C92A288CF400200A2D /* Assets.xcassets */,
 				4639A6CB2A288CF400200A2D /* LaunchScreen.storyboard */,
 				4639A6CE2A288CF400200A2D /* Info.plist */,
@@ -72,13 +78,13 @@
 			path = TestUIKit;
 			sourceTree = "<group>";
 		};
-		DC7BAA142A71713E006E6652 /* TableViewCell */ = {
+		46CBD6EC2A7D2D3700914957 /* CollectionView Cell */ = {
 			isa = PBXGroup;
 			children = (
-				DC7BAA112A717133006E6652 /* LinkedAccountsTableViewCell.swift */,
-				DC7BAA102A717133006E6652 /* LinkedAccountsTableViewCell.xib */,
+				46CBD6E92A7D2D2300914957 /* PaymentCollectionViewCell.swift */,
+				46CBD6E82A7D2D2200914957 /* PaymentCollectionViewCell.xib */,
 			);
-			path = TableViewCell;
+			path = "CollectionView Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +147,8 @@
 			files = (
 				4639A6CD2A288CF400200A2D /* LaunchScreen.storyboard in Resources */,
 				4639A6CA2A288CF400200A2D /* Assets.xcassets in Resources */,
-				DC7BAA122A717133006E6652 /* LinkedAccountsTableViewCell.xib in Resources */,
 				4639A6C82A288CF300200A2D /* Main.storyboard in Resources */,
+				46CBD6EA2A7D2D2300914957 /* PaymentCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4639A6C52A288CF300200A2D /* ViewController.swift in Sources */,
+				46CBD6E32A7D2C1E00914957 /* PaymentVC.swift in Sources */,
+				46CBD6EE2A7D332300914957 /* MyCollectionViewCell.swift in Sources */,
+				46CBD6EB2A7D2D2300914957 /* PaymentCollectionViewCell.swift in Sources */,
 				4639A6C12A288CF300200A2D /* AppDelegate.swift in Sources */,
-				DC7BAA132A717133006E6652 /* LinkedAccountsTableViewCell.swift in Sources */,
 				4639A6C32A288CF300200A2D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +311,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4856QP74BY;
+				DEVELOPMENT_TEAM = QCRCTQB8GV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -331,7 +339,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4856QP74BY;
+				DEVELOPMENT_TEAM = QCRCTQB8GV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TestUIKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
