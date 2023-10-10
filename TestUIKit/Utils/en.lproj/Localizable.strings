@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  TestUIKit
+
+  Created by Coder Crew on 03/10/2023.
+  
+*/
+
+"Hello" = "Hello";
+"Buy" = "Buy this book";
+"Register" = "Register for a new account";
