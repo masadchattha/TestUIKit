@@ -10,6 +10,8 @@ import UIKit
 class SemaphoreVC: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    let semaphore = DispatchSemaphore(value: 2) // Initialize the semaphore with a value of 2, allowing only 2 concurrent downloads
+    let queue = DispatchQueue(label: "com.muhammadasad.TestUIKit.downloadQueue", attributes: .concurrent)
     let urls = [
         URL(string: "https://via.placeholder.com/150/92c952")!,
         URL(string: "https://via.placeholder.com/150/771796")!,
@@ -25,11 +27,15 @@ class SemaphoreVC: UIViewController {
 
     func loadImages() {
         for url in self.urls {
-            DispatchQueue.global().async { self.downloadImage(from: url) }
+            queue.async { self.downloadImage(from: url) }
         }
     }
 
     func downloadImage(from url: URL) {
+        // Wait to acquire the semaphore
+        semaphore.wait()
+        defer { semaphore.signal() }
+
         print("Starting download from \(url)")
         guard let imageData = try? Data(contentsOf: url) else { return }
         let image = UIImage(data: imageData)
