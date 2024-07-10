@@ -41,6 +41,7 @@ class SemaphoreVC: UIViewController {
         guard let imageData = try? Data(contentsOf: url) else { return }
         let image = UIImage(data: imageData)
         DispatchQueue.main.async { self.imageView.image = image }
+        Thread.sleep(forTimeInterval: 1)
         print("Finished download from \(url)")
     }
 }
