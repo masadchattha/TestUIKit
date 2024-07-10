@@ -10,7 +10,8 @@ import UIKit
 class SemaphoreVC: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
-    let semaphore = DispatchSemaphore(value: 2) // Initialize the semaphore with a value of 2, allowing only 2 concurrent downloads
+//    let semaphore = DispatchSemaphore(value: 2) // Initialize the semaphore with a value of 2, allowing only 2 concurrent downloads
+    let semaphore = DispatchSemaphore(value: 1)
     let queue = DispatchQueue(label: "com.muhammadasad.TestUIKit.downloadQueue", attributes: .concurrent)
     let urls = [
         URL(string: "https://via.placeholder.com/150/92c952")!,
