@@ -39,6 +39,8 @@
 		46DFB41A2A80D1F6008C0B23 /* UISearchBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DFB4082A80D1F6008C0B23 /* UISearchBar+Extension.swift */; };
 		46DFB41B2A80D1F6008C0B23 /* NotificationName+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DFB4092A80D1F6008C0B23 /* NotificationName+Extension.swift */; };
 		46DFB41C2A80D1F6008C0B23 /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DFB40A2A80D1F6008C0B23 /* UILable+Extension.swift */; };
+		ADDD88E32C3E6295008BCC2C /* SemaphoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD88E12C3E6295008BCC2C /* SemaphoreVC.swift */; };
+		ADDD88E42C3E6295008BCC2C /* SemaphoreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADDD88E22C3E6295008BCC2C /* SemaphoreVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +84,8 @@
 		46DFB4082A80D1F6008C0B23 /* UISearchBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Extension.swift"; sourceTree = "<group>"; };
 		46DFB4092A80D1F6008C0B23 /* NotificationName+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotificationName+Extension.swift"; sourceTree = "<group>"; };
 		46DFB40A2A80D1F6008C0B23 /* UILable+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILable+Extension.swift"; sourceTree = "<group>"; };
+		ADDD88E12C3E6295008BCC2C /* SemaphoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemaphoreVC.swift; sourceTree = "<group>"; };
+		ADDD88E22C3E6295008BCC2C /* SemaphoreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SemaphoreVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,7 @@
 		ADDD88DB2C3E5997008BCC2C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				ADDD88E02C3E6270008BCC2C /* Semaphore */,
 				4639A6C42A288CF300200A2D /* ViewController.swift */,
 				468FAD7D2ACAD7A100943161 /* TestViewController.swift */,
 				46CBD6E22A7D2C1E00914957 /* PaymentVC.swift */,
@@ -213,6 +218,15 @@
 				46DB2FC62AD41EDF008F2E8C /* TableView Cells */,
 			);
 			path = Reuseables;
+			sourceTree = "<group>";
+		};
+		ADDD88E02C3E6270008BCC2C /* Semaphore */ = {
+			isa = PBXGroup;
+			children = (
+				ADDD88E12C3E6295008BCC2C /* SemaphoreVC.swift */,
+				ADDD88E22C3E6295008BCC2C /* SemaphoreVC.xib */,
+			);
+			path = Semaphore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4639A6CD2A288CF400200A2D /* LaunchScreen.storyboard in Resources */,
+				ADDD88E42C3E6295008BCC2C /* SemaphoreVC.xib in Resources */,
 				4639A6CA2A288CF400200A2D /* Assets.xcassets in Resources */,
 				46DB2FCA2AD41F13008F2E8C /* TestTableViewCell.xib in Resources */,
 				4639A6C82A288CF300200A2D /* Main.storyboard in Resources */,
@@ -311,6 +326,7 @@
 				46DFB41C2A80D1F6008C0B23 /* UILable+Extension.swift in Sources */,
 				468FAD7E2ACAD7A100943161 /* TestViewController.swift in Sources */,
 				46DFB40C2A80D1F6008C0B23 /* UIColor+Extension.swift in Sources */,
+				ADDD88E32C3E6295008BCC2C /* SemaphoreVC.swift in Sources */,
 				46DFB40F2A80D1F6008C0B23 /* UIImage+Extension.swift in Sources */,
 				46DFB4162A80D1F6008C0B23 /* UItextView+Extension.swift in Sources */,
 				46DFB4102A80D1F6008C0B23 /* PhassetExtension.swift in Sources */,
